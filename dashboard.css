@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Changed background to black */
+    color: white; /* Changed text color to white for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #000000; /* Changed navbar background to black */
+    padding: 1rem 0;
+    margin: 0;
+    align-items: center;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0px 4px 10px #0000004d;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--serenity-gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* Changed text color to white */
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #2b4a6b; /* Hover effect: blue */
+    color: white;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto; /* Adjusted margin to move content down */
+    background: #222222; /* Dark background for content area */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+/* Headings */
+h2 {
+    color: white; /* Changed to white for readability */
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: white; /* Changed to white */
+    margin-top: 30px;
+    text-align: left;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+}
+
+/* Logout Button */
+.logout-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #d9534f;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.logout-btn:hover {
+    background: #060055;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #333; /* Dark background */
+    color: white; /* White text */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #060055;
+    color: white;
+}
+
+td {
+    background: #000000;
+    color: white;
+}
+
+/* Alternate Row Colors */
+tbody tr:nth-child(odd) {
+    background-color: #000000;
+}
+
+tbody tr:hover {
+    background-color: #060055;
+    transition: 0.3s;
+}
+
+/* Reply Button */
+.reply-btn {
+    display: inline-block;
+    padding: 6px 10px;
+    background: #060055;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.reply-btn:hover {
+    background: #060055;
+}
+
+/* Fix for Unclickable Links in Table */
+td a {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #060055;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #060055;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+td a:hover {
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .logout-btn {
+        position: relative;
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+}
